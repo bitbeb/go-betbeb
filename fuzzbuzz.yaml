@@ -26,6 +26,14 @@ targets:
       function: Fuzz
       package: github.com/bitbeb/go-betbeb/tests/fuzzers/trie
       checkout: github.com/bitbeb/go-betbeb/
+  - name: txfetcher
+    language: go
+    version: "1.13"
+    corpus: ./fuzzers/txfetcher/corpus
+    harness:
+      function: Fuzz
+      package: github.com/bitbeb/go-betbeb/tests/fuzzers/txfetcher
+      checkout: github.com/bitbeb/go-betbeb/
   - name: whisperv6
     language: go
     version: "1.13"
